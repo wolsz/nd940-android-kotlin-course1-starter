@@ -3,13 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <data>
-        <variable
-            name="activityViewModel"
-            type="com.udacity.shoestore.viewmodel.ActivityViewModel" />
-    </data>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
+     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".view.DetailFragment">
@@ -72,7 +66,6 @@
             android:layout_marginEnd="24dp"
             android:ems="10"
             android:hint="@string/name_hint"
-            android:text="@={activityViewModel.newShoe.name}"
             android:inputType="textPersonName"
             android:textSize="14sp"
             app:layout_constraintBaseline_toBaselineOf="@+id/name_label"
@@ -99,12 +92,12 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="@string/size_hint"
-            android:inputType="textPersonName|numberDecimal"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
             android:textSize="14sp"
             app:layout_constraintBaseline_toBaselineOf="@+id/size_label"
             app:layout_constraintEnd_toEndOf="@+id/company_editText"
-            app:layout_constraintStart_toStartOf="@+id/company_editText"
-            android:importantForAutofill="no" />
+            app:layout_constraintStart_toStartOf="@+id/company_editText" />
 
         <EditText
             android:id="@+id/description_editText"

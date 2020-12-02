@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
         NavigationUI.setupActionBarWithNavController(this, navController)
 
         viewModel = ViewModelProvider(this).get(ActivityViewModel::class.java)
-        viewModel.newShoe = Shoe("New Shoe", 29.0, "WolszShoes", "This is a new shoe.")
+//        viewModel.newShoe = Shoe("New Shoe", 29.0, "WolszShoes", "This is a new shoe.")
 
         Timber.plant(Timber.DebugTree())
     }
