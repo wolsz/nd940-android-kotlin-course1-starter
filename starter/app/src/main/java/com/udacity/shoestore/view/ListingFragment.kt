@@ -52,8 +52,10 @@ class ListingFragment : Fragment() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        return NavigationUI.onNavDestinationSelected(item, view!!.findNavController())
-                || super.onOptionsItemSelected(item)
+        findNavController().navigate(ListingFragmentDirections.actionListingFragmentToLoginFragment())
+        return super.onOptionsItemSelected(item)
+//        return NavigationUI.onNavDestinationSelected(item, view!!.findNavController())
+//                || super.onOptionsItemSelected(item)
     }
 
     fun adding() {

@@ -19,7 +19,8 @@ import timber.log.Timber
 class DetailFragment : Fragment() {
 
     private lateinit var binding: DetailFragmentBinding
-    private val mViewModel by activityViewModels<ActivityViewModel>()
+//    private val mViewModel by activityViewModels<ActivityViewModel>()
+    private val mViewModel: ActivityViewModel by activityViewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

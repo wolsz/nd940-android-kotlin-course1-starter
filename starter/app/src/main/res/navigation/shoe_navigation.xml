@@ -42,6 +42,11 @@
         <action
             android:id="@+id/action_listingFragment_to_detailFragment"
             app:destination="@id/detailFragment" />
+        <action
+            android:id="@+id/action_listingFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/listingFragment"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/detailFragment"
@@ -50,9 +55,8 @@
         tools:layout="@layout/detail_fragment">
         <action
             android:id="@+id/action_detailFragment_to_listingFragment"
-            app:destination="@id/listingFragment" />
-        <action
-            android:id="@+id/action_detailFragment_to_loginFragment"
-            app:destination="@id/loginFragment" />
+            app:destination="@id/listingFragment"
+            app:popUpTo="@id/listingFragment"
+            app:popUpToInclusive="true" />
     </fragment>
 </navigation>

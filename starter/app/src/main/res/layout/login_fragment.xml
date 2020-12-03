@@ -43,7 +43,8 @@
             android:inputType="textEmailAddress"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/username_label_text" />
+            app:layout_constraintTop_toBottomOf="@+id/username_label_text"
+            android:importantForAutofill="no" />
 
         <TextView
             android:id="@+id/password_label_text"
@@ -67,7 +68,8 @@
             android:inputType="textPassword"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/password_label_text" />
+            app:layout_constraintTop_toBottomOf="@+id/password_label_text"
+            android:importantForAutofill="no" />
 
         <Button
             android:id="@+id/signin_button"
