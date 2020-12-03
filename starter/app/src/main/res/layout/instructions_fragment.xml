@@ -9,7 +9,7 @@
         tools:context=".view.InstructionsFragment">
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/instruction_label_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
@@ -21,7 +21,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView7"
+            android:id="@+id/message1_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -31,7 +31,7 @@
             android:textSize="18sp" />
 
         <TextView
-            android:id="@+id/textView8"
+            android:id="@+id/message2_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
