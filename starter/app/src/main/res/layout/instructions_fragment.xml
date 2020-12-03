@@ -16,9 +16,7 @@
             android:layout_marginTop="30dp"
             android:layout_marginEnd="24dp"
             android:text="@string/instructions"
-            android:textAlignment="center"
-            android:textSize="30sp"
-            android:textStyle="bold" />
+            style="@style/screen_caption" />
 
         <TextView
             android:id="@+id/message1_text"
