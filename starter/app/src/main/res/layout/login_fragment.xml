@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- The constraint layout is used here otherwise linear layouts would
+        have had to be nested and therefore become inefficient -->
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"

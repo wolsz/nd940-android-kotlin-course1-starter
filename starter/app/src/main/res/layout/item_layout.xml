@@ -10,6 +10,9 @@
             type="com.udacity.shoestore.models.Shoe" />
     </data>
 
+    <!-- The constraint layout is used here otherwise linear layouts would
+        have had to be nested and therefore become inefficient -->
+
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

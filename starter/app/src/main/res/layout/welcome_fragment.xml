@@ -2,13 +2,15 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+
+    <!-- The linear layout is used here because this a simple non-nested layout -->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         tools:context=".view.WelcomeFragment">
 
-        <!-- TODO: Update blank fragment layout -->
         <TextView
             style="@style/screen_caption"
             android:layout_width="match_parent"

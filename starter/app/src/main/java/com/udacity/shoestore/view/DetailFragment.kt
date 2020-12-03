@@ -25,7 +25,7 @@ class DetailFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
 
         binding = DataBindingUtil.inflate(inflater, R.layout.detail_fragment, container, false)
@@ -43,7 +43,7 @@ class DetailFragment : Fragment() {
 
     private fun outInfo() {
         val name = binding.shoeNameEditText.text.toString()
-        val size  = binding.sizeEditText.text.toString().toDouble()
+        val size  =  if(binding.sizeEditText.text.toString() == "") 0.0 else binding.sizeEditText.text.toString().toDouble()
         val company = binding.companyEditText.text.toString()
         val description = binding.descriptionEditText.text.toString()
 
